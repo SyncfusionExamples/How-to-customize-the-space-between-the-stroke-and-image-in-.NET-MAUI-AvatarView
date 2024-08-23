@@ -16,11 +16,6 @@ This article explains how to customize the space between the stroke and image or
 </StackLayout>
 ```
 
-- **Border**: The `Border` is used to create a stroke around the `Avatar View`. 
-- **WidthRequest and HeightRequest**: By setting these properties, you can control the size of the border, which in turn affects the space between the stroke and the avatar image.
-
-By modifying the `WidthRequest`, `HeightRequest`, and `CornerRadius` values, you can effectively control the spacing between the stroke and the avatar image to achieve the desired visual effect.
-
 **Output**
 
 ![AvatarView_Space.gif](https://support.syncfusion.com/kb/agent/attachment/article/17197/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI4NjA2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.wgn968v8d-fzMhqQ54is7Cefo7HJIyIh3ab5iBNJ8A0)
