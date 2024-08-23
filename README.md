@@ -19,3 +19,13 @@ This article explains how to customize the space between the stroke and image or
 **Output**
 
 ![AvatarView_Space.gif](https://support.syncfusion.com/kb/agent/attachment/article/17197/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI4NjA2Iiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.wgn968v8d-fzMhqQ54is7Cefo7HJIyIh3ab5iBNJ8A0)
+
+**Requirements to run the demo**
+ 
+To run the demo, refer to [System Requirements for .NET MAUI](https://help.syncfusion.com/maui/system-requirements)
+ 
+**Troubleshooting:**
+
+**Path too long exception** 
+
+If you are facing path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
