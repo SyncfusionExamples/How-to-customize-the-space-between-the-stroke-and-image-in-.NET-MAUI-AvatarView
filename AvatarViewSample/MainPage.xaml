@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AvatarViewSample.MainPage"
+             xmlns:slider="clr-namespace:Syncfusion.Maui.Sliders;assembly=Syncfusion.Maui.Sliders"
+             xmlns:core="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             WidthRequest="{OnPlatform WinUI='300'}">
+
+    <Grid RowDefinitions="60,Auto" RowSpacing="10">
+        <StackLayout>
+            <Label Text="Customize the Space:" FontAttributes="Bold"/>
+            <slider:SfSlider x:Name="slider" Interval="10" ValueChanged="OnValueChanged"
+                             Minimum="80" Maximum="100"/>
+        </StackLayout>
+        <Border Grid.Row="1" Padding="10">
+            <StackLayout Spacing="5">
+                <Label Text="Circle Shape Avatar:" HorizontalOptions="Center"/>
+                <Border x:Name="circleBorder" WidthRequest="80" HeightRequest="80"
+                        Stroke="Black" StrokeThickness="2">
+                    <Border.StrokeShape>
+                        <RoundRectangle x:Name="circleRadius" CornerRadius="40"/>
+                    </Border.StrokeShape>
+                    <core:SfAvatarView ContentType="AvatarCharacter" AvatarShape="Circle"/>
+                </Border>
+
+                <Label Text="Square Shape Avatar:" HorizontalOptions="Center"/>
+                <Border x:Name="squareBorder" WidthRequest="80" HeightRequest="80"
+                        Stroke="Black" StrokeThickness="2">
+                    <core:SfAvatarView ContentType="AvatarCharacter" AvatarShape="Square"/>
+                </Border>
+
+                <Label Text="Custom Shape Avatar:" HorizontalOptions="Center"/>
+                <Border x:Name="customBorder" WidthRequest="160" HeightRequest="80"
+                        Stroke="Black" StrokeThickness="2">
+                    <Border.StrokeShape>
+                        <RoundRectangle x:Name="customRadius" CornerRadius="80"/>
+                    </Border.StrokeShape>
+                    <core:SfAvatarView ContentType="AvatarCharacter" AvatarShape="Custom"
+                                       HeightRequest="70" WidthRequest="150" CornerRadius="80"/>
+                </Border>
+            </StackLayout>
+        </Border>
+    </Grid>
+
+</ContentPage>
